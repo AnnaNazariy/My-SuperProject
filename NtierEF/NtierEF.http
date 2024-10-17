@@ -1,0 +1,6 @@
+@NtierEF_HostAddress = http://localhost:5082
+
+GET {{NtierEF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
