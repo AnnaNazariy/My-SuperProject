@@ -3,7 +3,7 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace dotnet.Features.Products.Commands.Delete
+namespace NtierCLA.API.Features.Products.Commands.Delete
 {
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand>
     {

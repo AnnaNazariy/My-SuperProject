@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dotnet.Domain
+namespace NtierCLA.API.Domain
 {
     public class Product
     {

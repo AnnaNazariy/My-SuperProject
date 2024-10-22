@@ -1,7 +1,7 @@
-﻿using dotnet.Domain; 
+﻿using NtierCLA.API.Domain; 
 using Microsoft.EntityFrameworkCore;
 
-namespace dotnet.Persistence
+namespace NtierCLA.API.Persistence
 {
     public class AppDbContext : DbContext
     {

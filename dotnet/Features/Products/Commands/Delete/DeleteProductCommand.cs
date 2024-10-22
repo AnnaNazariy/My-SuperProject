@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace dotnet.Features.Products.Commands.Delete
+namespace NtierCLA.API.Features.Products.Commands.Delete
 {
     public record DeleteProductCommand(Guid Id) : IRequest; 
 }

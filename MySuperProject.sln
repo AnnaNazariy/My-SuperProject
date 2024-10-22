@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADO", "ADO", "{BEEC3BFB-0EE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchitecture", "CleanArchitecture", "{24A37818-F71E-4AAF-BDA1-C7C093014A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet", "dotnet\dotnet.csproj", "{FC637A74-FD57-4648-8A16-9B33D9B278CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NtierCLA.API", "dotnet\NtierCLA.API.csproj", "{FC637A74-FD57-4648-8A16-9B33D9B278CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
