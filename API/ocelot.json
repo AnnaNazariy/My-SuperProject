@@ -1,0 +1,95 @@
+﻿{
+  "Routes": [
+    {
+      "SwaggerKey": "efapi",
+      "UpstreamPathTemplate": "/api/{version}/ef/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/{version}/ef/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ]
+    },
+    {
+      "SwaggerKey": "cleanapi",
+      "UpstreamPathTemplate": "/api/{version}/clean/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/{version}/clean/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    },
+    {
+      "SwaggerKey": "dapperapi",
+      "UpstreamPathTemplate": "/api/{version}/dapper/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/{version}/dapper/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5152
+        }
+      ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "efapi",
+      "Config": [
+        {
+          "Name": "EF API",
+          "Version": "v1",
+          "Url": "http://localhost:5082/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "cleanapi",
+      "Config": [
+        {
+          "Name": "Clean API",
+          "Version": "v1",
+          "Url": "http://localhost:5069/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "dapperapi",
+      "Config": [
+        {
+          "Name": "Dapper API",
+          "Version": "v1",
+          "Url": "http://localhost:5152/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration",
+    "BaseUrl": "http://localhost:5000"
+  }
+}
