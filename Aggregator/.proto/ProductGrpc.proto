@@ -1,0 +1,32 @@
+﻿namespace Aggregator.proto
+
+syntax = "proto3";
+
+package ProductGrpc;
+
+service ProductService {
+  rpc GetProductByIds (GetProductByIdsRequest) returns (ProductListResponse);
+  rpc DoesProductExist (DoesProductExistRequest) returns (DoesProductExistResponse);
+}
+
+message GetProductByIdsRequest {
+  repeated int32 product_ids = 1;
+}
+
+message ProductListResponse {
+  repeated Product products = 1;
+}
+
+message Product {
+  int32 id = 1;
+  string name = 2;
+  double price = 3;
+}
+
+message DoesProductExistRequest {
+  int32 product_id = 1;
+}
+
+message DoesProductExistResponse {
+  bool exists = 1;
+}

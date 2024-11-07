@@ -1,0 +1,6 @@
+@Jew_HostAddress = http://localhost:5058
+
+GET {{Jew_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
